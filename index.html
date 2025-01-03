@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="description" content="We are a music collective based out of Minneapolis, Minnesota featuring artists AXEL, JUAN, GEREMIAHHH, and WAVY.">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<title>theMARAJ | Music Collective</title>
+		<link rel="icon" href="./favicon.png">
+		<link rel="stylesheet" href="./css/style.css" type="text/css" />
+		<script src="./js/jquery-3.3.1.min.js"></script>
+		<script src="./js/jquery-ui.min.js"></script>
+		<script src="./js/main.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,600" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Raleway:600,700" rel="stylesheet">
+
+		<!--[if IE]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+		<!--[if lte IE 7]>
+			<script src="js/IE8.js" type="text/javascript"></script><![endif]-->
+		<!--[if lt IE 7]>
+			<link rel="stylesheet" type="text/css" media="all" href="css/ie6.css"/><![endif]-->
+
+		<style>
+			.title .action-button.spotify {
+				background: #1db954;
+				color: white;
+			}
+			.title .action-button.spotify:hover {
+				background: white;
+				color: #1db954;
+			}
+			.title .action-button.youtube {
+				background: #c4302b;
+				color: white;
+			}
+			.title .action-button.youtube:hover {
+				background: white;
+				color: #c4302b;
+			}
+		</style>
+
+	</head>
+	<body>
+		<!-- MOBILE NAV -->
+
+		<a class="click hover mobile-nav mobile-login" href="https://sites.google.com/view/themaraj/dashboard" target="_blank">
+			<img src="./img/login.png" alt="Login"/>
+		</a>
+		<!--a class="click hover mobile-nav mobile-shop" href="https://themaraj.bigcartel.com/" target="_blank">
+			<img src="./img/shop.png" alt="Shop"/>
+		</a-->
+		<a class="click hover mobile-nav mobile-instagram" href="https://www.instagram.com/themarajofficial/" target="_blank">
+			<img src="./img/instagram_icon.png" alt="Instagram"/>
+		</a>
+
+		<!-- BORDER -->
+
+		<div class="border top ease"></div>
+		<div class="border left ease"></div>
+		<div class="border right ease"></div>
+		<div class="border bottom ease"></div>
+
+		<!-- MENU -->
+
+		<div class="cover title-container"> <!-- grain class removed for show don't tell -->
+			<div class="raleway" id="action-menu-container">
+				<ul id="action-menu" class="ease-all"> <!-- add blackout class if dark themed -->
+					<li class="click hover" id="login" role="button">Login</li>
+					<!--li class="click hover" id="login" role="button"><a href="https://soundcloud.com/themarajofficial" target="_blank" style="color: grey;">Listen</a></li-->
+					<li class="click hover" id="action-music">Music</li>
+					<li class="click hover" id="action-video">Video</li>
+					<!--li class="click hover" id="action-merch">Merch</li-->
+					<li class="click hover" id="action-about">About</li>
+					<li class="click hover" id="action-social">Social</li>
+					<li class="click hover action-contact">Contact</li>
+					<!--li class="click hover" id="shop"><a href="https://themaraj.bigcartel.com/" target="_blank">Shop</a></li-->
+					<li id="instagram"><a class="hover" href="https://www.instagram.com/themarajofficial/" target="_blank">Follow</a></li>
+				</ul>
+			</div>
+
+			<!--a class="hover raleway" id="instagram" href="https://www.instagram.com/themarajofficial/" target="_blank">Instagram</a-->
+
+			<!-- TITLE -->
+
+			<div class="cover lodgapalooza"></div>
+
+			<div class="centered title"> <!-- add dark class -->
+				<h1>&nbsp;"Dripstars Deluxe"</h1>
+				<h2 class="raleway">&nbsp;Album Out Now</h2>
+				<a class="action-button generic" href="https://music.apple.com/us/album/dripstars-deluxe/1494741912" target="_blank">Apple Music</a>
+
+				<!--a class="action-button genius" href="https://genius.com/Xtasy-falling-down-lyrics" target="_blank">Lyrics on Genius</a-->
+				<!--a class="action-button generic" href="https://music.apple.com/us/album/dripstars-deluxe/1494741912" target="_blank">Listen on Apple Music</a>
+				<a class="action-button spotify" href="https://open.spotify.com/album/4sXMmG4zHv2e54NWiIC0zg" target="_blank" style="margin-left: 8px; margin-right: 8px; min-width: 207px">&nbsp;Stream on Spotify&nbsp;</a-->
+			</div>
+
+			<!-- SPLIT SCREEN -->
+
+			<!--div class="split-screen">
+				<div class="cover crowd">
+					<div class="centered title">
+						<h1>Montana of 300 Tour</h1>
+						<h2 class="raleway">Appearance by theMARAJ</h2>
+						<a class="action-button generic" href="https://themaraj.bigcartel.com/product/montana-of-300-midwest-tour" target="_blank">Buy Tickets</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="split-screen split-screen-right">
+				<div class="cover ep-1986">
+					<div class="centered title">
+						<h1>"1986" EP Out Now</h1>
+						<h2 class="raleway">SoundCloud Exclusive</h2>
+						<a class="action-button generic" href="https://soundcloud.com/themarajofficial/sets/1986k" target="_blank">Listen Now</a>
+					</div>
+				</div>
+			</div-->
+
+			<!-- NAVIGATION -->
+
+			<div class="chevron click">⟩</div> <!-- add dark class -->
+
+			<!--div class="cover grain" style="height: 100%;"></div-->
+
+			<a id="anchor-music"></a>
+			<div class="centered media-gateway"> <!-- background style for split screen -->
+				<div class="section-content">
+					<div class="media-block-container">
+						<a class="contain ease hover media-block soundcloud" href="https://soundcloud.com/themarajofficial" target="_blank"></a>
+						<a class="contain ease hover media-block spotify" href="https://open.spotify.com/artist/4ZYNnmLUsZEB3kIj2cq38D" target="_blank"></a>
+						<a class="contain ease hover media-block apple-music" href="https://itunes.apple.com/us/artist/themaraj/1384365283" target="_blank"></a>
+						<a class="contain ease hover media-block tidal" href="https://listen.tidal.com/artist/9847220" target="_blank"></a>
+						<a class="contain ease hover media-block youtube" href="https://www.youtube.com/channel/UCDfayuLALInnjo8p2euJkJQ" target="_blank"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- EVENTS -->
+
+		<div class="events-block section section-bleed-top">
+			<div class="section-content">
+
+				<!--a id="anchor-music" style="top: calc(100vh - 28px);"></a>
+				<div style="margin-bottom: 36px; margin-left: calc(-15% - 9px); margin-top: 96px; text-align: center; width: 130%;">
+					<div class="section-content">
+						<div class="media-block-container">
+							<a class="contain ease hover media-block soundcloud" href="https://soundcloud.com/themarajofficial" target="_blank"></a>
+							<a class="contain ease hover media-block spotify" href="https://open.spotify.com/artist/4ZYNnmLUsZEB3kIj2cq38D" target="_blank"></a>
+							<a class="contain ease hover media-block apple-music" href="https://itunes.apple.com/us/artist/themaraj/1384365283" target="_blank"></a>
+							<a class="contain ease hover media-block tidal" href="https://listen.tidal.com/artist/9847220" target="_blank"></a>
+							<a class="contain ease hover media-block youtube" href="https://www.youtube.com/channel/UCDfayuLALInnjo8p2euJkJQ" target="_blank"></a>
+						</div>
+					</div>
+				</div-->
+
+				<h1>08.14.20</h1>
+				<p class="mobile-justify">See the official video release of <a class="ease" href="https://youtu.be/PZgIpIwj0gI" target="_blank">Love Dose</a> by Axel, shot and produced by Sawyer Brice. Stream <a class="ease" href="https://youtu.be/PZgIpIwj0gI" target="_blank">Love Dose</a> now on <a class="ease" href="https://music.apple.com/us/album/love-dose/1526971588?i=1526971589" target="_blank">Apple Music</a> and <a class="ease" href="https://open.spotify.com/album/5mRarCxHFjKWbIKqs7DiKk?si=yDpmU9gkTXOHpuqe1oKQmQ" target="_blank">Spotify</a>.</p>
+
+				<h1>07.11.20</h1>
+				<p class="mobile-justify">Listen now to <a class="ease" href="https://soundcloud.com/themarajofficial/sets/made-among-the-stars" target="_blank">Made Among The Stars</a>, written and performed by Juan Mantilla. This project represents the love story between two souls on a cosmic journey told from the perspective of Juan.</p>
+
+				<h1>04.05.20</h1>
+				<p class="mobile-justify">The singles <a class="ease" href="https://soundcloud.com/themarajofficial/isolation" target="_blank">Isolation</a> by Geremiahhh, <a class="ease" href="https://soundcloud.com/themarajofficial/brazy" target="_blank">Brazy</a> by ForgiveMeWavy, and <a class="ease" href="https://soundcloud.com/themarajofficial/thesedays" target="_blank">These Days</a> by Jayson Bank$ are available exclusively on SoundCloud.</p>
+
+				<!--h1>01.10.20</h1>
+				<p class="mobile-justify">The deluxe volume of "Dripstars" is available now on all streaming platforms. Listen now on <a class="ease" href="https://music.apple.com/us/album/dripstars-deluxe/1494741912" target="_blank">Apple Music</a>, <a class="ease" href="https://open.spotify.com/album/4sXMmG4zHv2e54NWiIC0zg" target="_blank">Spotify</a>, and <a class="ease" href="https://listen.tidal.com/album/127959833" target="_blank">Tidal</a>.</p-->
+
+				<h1>07.21.19</h1>
+				<p class="mobile-justify">"Dripstars" curates the full extent of the group's talent, passion, and versatility. Listen now on <a class="ease" href="https://music.apple.com/us/album/dripstars-deluxe/1494741912" target="_blank">Apple Music</a>, <a class="ease" href="https://open.spotify.com/album/4sXMmG4zHv2e54NWiIC0zg" target="_blank">Spotify</a>, and <a class="ease" href="https://listen.tidal.com/album/127959833" target="_blank">Tidal</a>.<!-- See the documentary on <a class="ease" href="https://www.youtube.com/watch?v=eiOn0ylnx1w" target="_blank">YouTube</a> for a glimpse into theMARAJ's social circle and affiliated lifestyle.--></p>
+
+				<h1>02.23.19</h1>
+				<p class="mobile-justify">Juan returns from his solo hiatus in 2019 with singles <a class="ease" href="https://soundcloud.com/themarajofficial/holdup" target="_blank">"Hold Up"</a> and <a class="ease" href="https://soundcloud.com/themarajofficial/vvs-prod-by-yung-forest" target="_blank">"VVS"</a> available exclusively on SoundCloud. Listen to the complete <a class="ease" href="https://soundcloud.com/themarajofficial/sets/1986k" target="_blank">1986 EP</a> out now.</p>
+
+				<!--h1>02.06.19</h1>
+				<p class="mobile-justify">The official video release of "PVP" from Axel's latest album, "Show Don't Tell, Vol. 1" is now available on <a class="ease" href="https://www.youtube.com/watch?v=9qx9r1YGink" target="_blank">YouTube</a>.</p-->
+
+				<h1>12.28.18</h1>
+				<p class="mobile-justify">theMARAJ presents Axel's sophomore release, "Show Don't Tell, Vol. 1" available now. Listen on <a class="ease" href="https://itunes.apple.com/us/album/show-dont-tell-vol-1/1447835982" target="_blank">Apple Music</a>, <a class="ease" href="https://open.spotify.com/album/0D6mObpmxCpJ2C6Ip55fIh" target="_blank">Spotify</a>, <a class="ease" href="https://listen.tidal.com/album/101589718" target="_blank">Tidal</a>, and <a class="ease" href="https://soundcloud.com/themarajofficial/sets/showdonttell" target="_blank">SoundCloud</a>.</p>
+
+				<!--h1>12.21.18</h1>
+				<p class="mobile-justify">Axel's latest single "Up All Night" is now available on all platforms. Listen now on <a class="ease" href="https://itunes.apple.com/us/album/up-all-night-single/1447383102" target="_blank">Apple Music</a>, <a class="ease" href="https://open.spotify.com/track/4e3rkG6d7bB2VgIXyqna4E" target="_blank">Spotify</a>, <a class="ease" href="https://listen.tidal.com/album/101342833" target="_blank">Tidal</a>, and <a class="ease" href="https://soundcloud.com/themarajofficial/upallnight" target="_blank">SoundCloud</a>.</p-->
+
+				<!--h1>11.17.18</h1>
+				<p class="mobile-justify">Jayson Bank$'s debut album, "The Dark Place" is now available on <a class="ease" href="https://itunes.apple.com/us/album/the-dark-place-ep/1443586338" target="_blank">Apple Music</a>, <a class="ease" href="https://open.spotify.com/album/4G035PbDjTjjiXrNb2Hzi7" target="_blank">Spotify</a>, <a class="ease" href="https://tidal.com/browse/album/99048586" target="_blank">Tidal</a>, and <a class="ease" href="https://soundcloud.com/themarajofficial/sets/thedarkplace" target="_blank">SoundCloud</a>. Listen to <a class="ease" href="https://soundcloud.com/themarajofficial/fallingdown?in=themarajofficial/sets/thedarkplace" target="_blank">Falling Down</a> as seen on <a class="ease" href="https://genius.com/Xtasy-falling-down-lyrics" target="_blank">Genius</a>.</p-->
+
+				<!--h1>10.12.18</h1>
+				<p class="mobile-justify">Jayson Bank$'s debut single "SAD" is now available for streaming on <a class="ease" href="https://soundcloud.com/themarajofficial/sad" target="_blank">SoundCloud</a>. Subscribe to us on <a class="ease" href="https://www.youtube.com/channel/UCDfayuLALInnjo8p2euJkJQ" target="_blank">YouTube</a> for the official video release.</p-->
+
+				<h1>08.18.18</h1>
+				<p class="mobile-justify">Shot in beautiful South Beach, Florida and Big Island, Minnesota, the official video release for "Caribbean" is now available on <a class="ease" href="https://www.youtube.com/watch?v=BQuWkPZvQag" target="_blank">YouTube</a>. Listen to Caribbean on <a class="ease" href="https://itunes.apple.com/us/album/caribbean-single/1384643520" target="_blank">Apple Music</a>, <a class="ease" href="https://open.spotify.com/album/3X1VxXlUQ8bqj5I1uzXjfN?si=wLIADAYNTuiaWU4nX_bDJw" target="_blank">Spotify</a>, and <a class="ease" href="https://listen.tidal.com/album/88879158" target="_blank">Tidal</a>.</p>
+
+				<h1>08.11.18</h1>
+				<p class="mobile-justify">"Nights in Miami" is out now exclusively on <a href="https://soundcloud.com/themarajofficial/sets/nights-in-miami" target="_blank">SoundCloud</a>. <a class="action-social ease" href="javascript:void(0)">Follow us</a> on social media for updates on our latest events and releases.</p>
+
+				<h1>05.30.18</h1>
+				<p class="mobile-justify">"BLACKOUT" is now available on all major platforms. Get it now on <a class="ease" href="https://itunes.apple.com/us/album/blackout/1390957555" target="_blank">Apple Music</a>, <a class="ease" href="https://open.spotify.com/album/66dwKe1eCITpAvENtVp5Kc?si=Ds1Kzjx5Tx2JBQlWm6bx_w" target="_blank">Spotify</a>, <a class="ease" href="https://listen.tidal.com/album/89520254" target="_blank">Tidal</a>, and <a class="ease" href="https://soundcloud.com/themarajofficial/sets/blackout" target="_blank">SoundCloud</a>. See the official video release of <a class="ease" href="https://www.youtube.com/watch?v=xQVVt4-UrJk" target="_blank">"Heat On Me"</a>.</p>
+
+				<!--h1>05.18.18</h1>
+				<p class="mobile-justify">Shot in beautiful Miami, Florida, see the video for our latest single Caribbean on <a class="ease" href="https://www.youtube.com/watch?v=dmXLQa5Dw_0" target="_blank">YouTube</a>. Listen to Caribbean on <a class="ease" href="https://itunes.apple.com/us/album/caribbean-single/1384643520" target="_blank">Apple Music</a>, <a class="ease" href="https://open.spotify.com/album/3X1VxXlUQ8bqj5I1uzXjfN?si=wLIADAYNTuiaWU4nX_bDJw" target="_blank">Spotify</a>, and <a class="ease" href="https://soundcloud.com/themarajofficial/caribbean" target="_blank">SoundCloud</a>.</p-->
+
+				<!--h1>03.23.18</h1>
+				<p class="mobile-justify">"BALENCIAGA" is out now exclusively on <a href="https://soundcloud.com/themarajofficial/balenciaga-bitch" target="_blank">SoundCloud</a>. See the official video release on <a class="ease" href="https://www.youtube.com/watch?v=mNmsG9pu9UE" target="_blank">YouTube</a> starring Axel, Juan, Ilya, and Jayson Bank$.</p-->
+
+				<!--h1>12.01.17</h1>
+				<p class="mobile-justify">We would like to extend a special thanks to Midway Access for helping making Axel's performance debut of "Empire" a success. Listen to "Empire" on <a class="ease" href="https://itunes.apple.com/us/album/empire/1310066884" target="_blank">Apple Music</a>, <a class="ease" href="https://open.spotify.com/album/3nDPwVoqx1s5Qqd1u3bqrt" target="_blank">Spotify</a>, <a class="ease" href="https://listen.tidal.com/album/81001547" target="_blank">Tidal</a>, and <a class="ease" href="https://soundcloud.com/axelboi/sets/empire" target="_blank">SoundCloud</a>.</p-->
+
+			</div>
+		</div>
+
+		<!-- VIDEO -->
+
+		<div class="cover video-block love_dose" id="love_dose">
+			<div class="click contain ease hover play" id="play-love-dose"></div>
+		</div>
+		<div class="cover video-block pvp" id="pvp">
+			<div class="click contain ease hover play" id="play-pvp"></div>
+		</div>
+		<div class="cover video-block caribbean" id="caribbean">
+			<div class="click contain ease hover play" id="play-caribbean"></div>
+		</div>
+		<div class="cover video-block heat-on-me" id="heat-on-me">
+			<div class="click contain ease hover play" id="play-heat-on-me"></div>
+		</div>
+		<div class="cover video-block balenciaga" id="balenciaga">
+			<div class="click contain ease hover play" id="play-balenciaga"></div>
+		</div>
+		<div class="cover video-block empire" id="empire">
+			<div class="click contain ease hover play" id="play-empire"></div>
+		</div>
+
+		<!-- MERCH -->
+
+		<!--div style="height: 400px;"></div-->
+
+		<!-- ABOUT -->
+
+		<div class="cover grain section section-bleed-bottom" id="anchor-about">
+			<div class="section-content">
+				<h1>About</h1>
+				<div class="justified">
+					<div class="about-block">
+						<p>
+							We are a music collective based out of Minneapolis, Minnesota featuring artists AXEL, JUAN, GEREMIAHHH, and WAVY. Follow us now for our sounds, videos, photography, and more. Don't sleep on theMARAJ, and join the movement while we're on the come up.
+							<br>
+							<br>
+							theMARAJ was formed in early 2015 by ILYA, JOSH, and JUAN, joined later by AXEL to form the collective it is today. The group has since grown to a roster of six artists, photographers, and videographers located throughout the Twin Cities.
+						</p>
+					</div>
+					<div class="about-block">
+						<p>
+							Visit us on <a href="https://soundcloud.com/themarajofficial" target="_blank">SoundCloud</a>, <a href="https://open.spotify.com/artist/4ZYNnmLUsZEB3kIj2cq38D" target="_blank">Spotify</a>, and <a href="https://itunes.apple.com/us/artist/themaraj/1384365283" target="_blank">Apple Music</a>, or subscribe to our <a href="https://www.youtube.com/channel/UCDfayuLALInnjo8p2euJkJQ" target="_blank">YouTube</a> channel to stay up to date on our latest releases. Follow us on social media for updates, or <a class="action-contact" href="javascript:void(0)">contact</a> our management team for business inquiries and collaborations.
+							<br>
+							<br>
+							Subscribe to us on <a href="https://twitter.com/themarajmgmt" target="_blank">Twitter</a>, <a href="https://www.instagram.com/themarajofficial/" target="_blank">Instagram</a>, and <a href="https://www.facebook.com/themarajofficial/" target="_blank">Facebook</a> to stay in touch with our latest events and releases.
+						</p>
+					</div>
+				</div>
+
+				<!-- SOCIAL -->
+
+				<div id="anchor-social" style="padding-top: 28px;">
+
+					<!-- JUAN -->
+
+					<div class="profile-block">
+						<img class="click juan" src="./img/juan_black_white.png" alt="Juan"/>
+						<div class="profile-title raleway">Juan, Founder, Artist</div>
+						<div class="justified">Juan is the founder, leader, and visionary of theMARAJ. He is an avid singer and songwriter, and brings his expertise to the group as both recording artist and producer. <a class="juan" href="javascript:void(0)">Read More...</a></div>
+						<div class="profile-gateway">
+							<a class="hover" href="https://soundcloud.com/themarajofficial/" target="_blank">
+								<img class="large" src="./img/soundcloud_icon.png" alt="SoundCloud"/>
+							</a>
+							<a class="hover" href="https://twitter.com/yabishjuan/" target="_blank">
+								<img src="./img/twitter_icon.png" alt="Twitter"/>
+							</a>
+							<a class="hover" href="https://www.instagram.com/mantilla.juan/" target="_blank">
+								<img src="./img/instagram_icon.png" alt="Instagram"/>
+							</a>
+						</div>
+					</div>
+
+					<!-- ILYA -->
+
+					<div class="profile-block">
+						<img class="click ilya" src="./img/ilya_black_white.png" alt="Ilya"/>
+						<div class="profile-title raleway">Ilya, Co-Founder</div>
+						<div class="justified">Ilya initially took on the role of managing the networking and business side of the team. However, he has begun to hone his own artistic craft throughout the years. <a class="ilya" href="javascript:void(0)">Read More...</a></div>
+						<div class="profile-gateway">
+							<a class="hover" href="https://twitter.com/Ilya_Mosk/" target="_blank">
+								<img src="./img/twitter_icon.png" alt="Twitter"/>
+							</a>
+							<a class="hover" href="https://www.instagram.com/ilya_mosk/" target="_blank">
+								<img src="./img/instagram_icon.png" alt="Instagram"/>
+							</a>
+						</div>
+					</div>
+
+					<!-- JOSH -->
+
+					<div class="profile-block">
+						<img class="click josh" src="./img/josh_black_white.png" alt="Josh"/>
+						<div class="profile-title raleway">Josh, Co-Founder, Producer</div>
+						<div class="justified">Josh was born and raised in Indio, California. With a family lineage from Mexico, he draws his inspiration from the Latino community in Southern California. <a class="josh" href="javascript:void(0)">Read More...</a></div>
+						<div class="profile-gateway">
+							<a class="hover" href="https://twitter.com/cachoniez/" target="_blank">
+								<img src="./img/twitter_icon.png" alt="Twitter"/>
+							</a>
+							<a class="hover" href="https://www.instagram.com/cachoniez/" target="_blank">
+								<img src="./img/instagram_icon.png" alt="Instagram"/>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="section section-bleed-top">
+			<div class="section-content">
+
+				<!-- AXEL -->
+
+				<div class="profile-block">
+					<img class="click axel" src="./img/axel_black_white.png" alt="Axel"/>
+					<div class="profile-title raleway">Axel, Artist</div>
+					<div class="justified">Axel is the principal audio engineer, and got his start in the industry recording a handful of old acquaintances. He says, "This game is selfish, only you can have your own back." <a class="axel" href="javascript:void(0)">Read More...</a></div>
+					<div class="profile-gateway">
+						<a class="hover" href="https://soundcloud.com/axelboi/" target="_blank">
+							<img class="large" src="./img/soundcloud_icon.png" alt="SoundCloud"/>
+						</a>
+						<a class="hover" href="https://twitter.com/axelboii/" target="_blank">
+							<img src="./img/twitter_icon.png" alt="Twitter"/>
+						</a>
+						<a class="hover" href="https://www.instagram.com/officialaxel/" target="_blank">
+							<img src="./img/instagram_icon.png" alt="Instagram"/>
+						</a>
+					</div>
+				</div>
+
+				<!-- GEREMIAHHH -->
+
+				<div class="profile-block">
+					<img class="click geremiahhh" src="./img/geremiahhh_black_white.png" alt="Geremiahhh"/>
+					<div class="profile-title raleway">Geremiahhh, Artist</div>
+					<div class="justified">Geremiahhh began producing in his early teens, though he didn't begin recording until the end of high school. He draws inspiration from 70's &amp; 80's funk, and early 2000's R&amp;B. <a class="geremiahhh" href="javascript:void(0)">Read More...</a></div>
+					<div class="profile-gateway">
+						<a class="hover" href="https://soundcloud.com/imgeremiahhh/" target="_blank">
+							<img class="large" src="./img/soundcloud_icon.png" alt="SoundCloud"/>
+						</a>
+						<!--a class="hover" href="https://twitter.com/HeyItsGeremiah/" target="_blank">
+							<img src="./img/twitter_icon.png" alt="Twitter"/>
+						</a-->
+						<a class="hover" href="https://www.instagram.com/geremiahhh/" target="_blank">
+							<img src="./img/instagram_icon.png" alt="Instagram"/>
+						</a>
+					</div>
+				</div>
+
+				<!-- JAYSON BANK$ -->
+
+				<!--div class="profile-block">
+					<img class="click jayson-banks" src="./img/jayson_banks_black_white.png" alt="Jayson Banks"/>
+					<div class="profile-title raleway">Jayson Bank$, Artist</div>
+					<div class="justified">Jayson comes from an Afro-Latino background, and was introduced to Latin Pop and Reggaeton at a young age. He later found a love for genres such as rap, rock, pop, and R&amp;B.<a class="jayson-banks" href="javascript:void(0)">Read More...</a></div>
+					<div class="profile-gateway">
+						<a class="hover" href="https://twitter.com/J_Clunee/" target="_blank">
+							<img src="./img/twitter_icon.png" alt="Twitter"/>
+						</a>
+						<a class="hover" href="https://www.instagram.com/jayson.banks/" target="_blank">
+							<img src="./img/instagram_icon.png" alt="Instagram"/>
+						</a>
+					</div>
+				</div-->
+
+				<!-- WAVY -->
+
+				<div class="profile-block">
+					<img class="click wavy" src="./img/wavy_black_white.png" alt="Wavy"/>
+					<div class="profile-title raleway">Wavy, Artist</div>
+					<div class="justified">Wavy is the newest recording artist on the roster. He draws his inspiration from ASAP ROCKY, Virgil Abloh, Travis Scott, and Kanye West. <a class="wavy" href="javascript:void(0)">Read More...</a></div>
+					<div class="profile-gateway">
+						<a class="hover" href="https://twitter.com/forgivemewavy/" target="_blank">
+							<img src="./img/twitter_icon.png" alt="Twitter"/>
+						</a>
+						<a class="hover" href="https://www.instagram.com/forgivemewavy/" target="_blank">
+							<img src="./img/instagram_icon.png" alt="Instagram"/>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- FOOTER -->
+
+		<div class="cover footer section">
+			<div class="section-content">
+				<h1>Contact</h1>
+				Contact us at <a class="email" href="https://www.instagram.com/themarajofficial/" target="_blank">@themarajofficial</a> for business inquiries or collaborations.
+				<a class="button ease-all raleway" href="https://www.instagram.com/themarajofficial/" class="ease">
+					<span>@themarajofficial</span>
+				</a>
+				<div class="footer-media">
+					<a href="https://itunes.apple.com/us/artist/themaraj/1384365283" target="_blank" class="contain hover apple-music-invert"></a>
+					<a href="https://soundcloud.com/themarajofficial" target="_blank" class="contain hover soundcloud-invert"></a>
+					<a href="https://open.spotify.com/artist/4ZYNnmLUsZEB3kIj2cq38D" target="_blank" class="contain hover spotify-invert"></a>
+					<div class="footer-social">
+						<a href="https://twitter.com/themarajmgmt" target="_blank" class="contain hover twitter-invert"></a>
+						<a href="https://www.instagram.com/themarajofficial/" target="_blank" class="contain hover instagram-invert"></a>
+						<a href="https://www.facebook.com/themarajofficial/" target="_blank" class="contain hover facebook-invert"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- OVERLAY -->
+
+		<div class="fade overlay" id="overlay">
+			<div class="click hover raleway" id="close">Close</div>
+
+			<!-- LOGIN -->
+
+			<div class="centered overlay-section" id="login-modal">
+				<input id="login-username" type="text" name="UserName" value="Management">
+				<br>
+				<input id="login-password" type="text" name="Password">
+				<div class="click raleway" id="submit" role="button">Submit</div>
+			</div>
+
+			<!-- VIDEO -->
+
+			<div class="overlay-section video-container" id="video-love-dose">
+				<iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/PZgIpIwj0gI?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+			</div>
+
+			<div class="overlay-section video-container" id="video-pvp">
+				<iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/9qx9r1YGink?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+			</div>
+
+			<div class="overlay-section video-container" id="video-caribbean">
+				<iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/BQuWkPZvQag?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+			</div>
+
+			<div class="overlay-section video-container" id="video-heat-on-me">
+				<iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/xQVVt4-UrJk?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+			</div>
+
+			<div class="overlay-section video-container" id="video-balenciaga">
+				<iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/mNmsG9pu9UE?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+			</div>
+
+			<div class="overlay-section video-container" id="video-soundcheck">
+				<iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/DFpb8vj1xi4?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+			</div>
+
+			<!-- PROFILE -->
+
+			<div class="overlay-section" id="overlay-profile">
+				<div class="profile-container">
+
+					<!-- JUAN -->
+
+					<div class="overlay-section" id="juan-profile">
+						<img src="./img/juan.png" alt="Juan"/>
+						<h3 class="raleway">Founder / Recording Artist / Producer</h3>
+						<p class="justified">Juan is the founder, leader, and visionary of theMARAJ. He began his musical education studying classical music and is an accomplished violist and pianist. Juan has been studying music for 10 years and has spent the latter half recording and producing. He is an avid singer and songwriter and brings his expertise to the group as both a recording artist and producer. Juan cites Tame Impala, Travis Scott, and Kanye West, as the artists who first inspired him to explore his artistry. He aims to build a movement off of theMARAJ's appeal, music, and energy, while tirelessly driving the brand forward.</p>
+					</div>
+
+					<!-- AXEL -->
+
+					<div class="overlay-section" id="axel-profile">
+						<img src="./img/axel.png" alt="Axel"/>
+						<h3 class="raleway">Audio Engineer / Recording Artist / Producer</h3>
+						<p class="justified">Axel grew up surrounded by music of all genres. His grandfather was a professional pianist whom he references as one of his major musical influences. One of Axel's greatest strengths is his versatility. He displays mastery across genres, such as in his debut album, Empire, and more recently, BLACKOUT. He comes from a loving upbringing with family and friends, and channels all his energy into his music. R&amp;B is Axel's preferred genre due to his ingenuity for creating melodies. He is entirely self-taught and got his start in the music industry recording himself and a handful of old acquaintances. Axel has had his influence felt across many local artist’s music. In his early years, he observed how easily others would use him for his talents; he says, "This game is selfish, only you can have your own back."</p>
+					</div>
+
+					<!-- ILYA -->
+
+					<div class="overlay-section" id="ilya-profile">
+						<img src="./img/ilya.png" alt="Ilya"/>
+						<h3 class="raleway">Co-Founder / General Manager</h3>
+						<p class="justified">Ilya initially took on the role of managing the networking and business side of the group as a co-founder of theMARAJ. He has stepped in as a photographer and videographer throughout the years and is currently at the head of many of the group's external relations. He can often be found in the studio working with the group or in the city on promotional business.</p>
+					</div>
+
+					<!-- JOSH -->
+
+					<div class="overlay-section" id="josh-profile">
+						<img src="./img/josh.png" alt="Josh"/>
+						<h3 class="raleway">Co-Founder / Producer</h3>
+						<p class="justified">Josh was born and raised in Indio, California. He draws inspiration from the Latino community of Southern California with a Mexican family lineage. Josh has made music a staple of his life since grade school, joining the school band and learning the alto saxophone. He devoted endless hours of his early years studying and practicing music. Josh went through the unexpected and moved to Minneapolis, Minnesota with his family at the start of high school. In Minnesota, Josh met Juan, Ilya, and Axel, who all motivated him to study music production and become a producer for theMARAJ. He brings an impressive array of beat-making skills to the team and continues to work on his production while expanding his musical range.</p>
+					</div>
+
+					<!-- GEREMIAHHH -->
+
+					<div class="overlay-section" id="geremiahhh-profile">
+						<img src="./img/geremiahhh.png" alt="Geremiahhh"/>
+						<h3 class="raleway">Recording Artist / Producer</h3>
+						<p class="justified">Geremiahhh was born and raised in Minnesota, with music being a prevalent factor in his life throughout his younger years. He began producing in his early teens, though he didn't begin recording until the end of his high school career. Geremiahhh draws inspiration from 70's and 80's funk, early 2000's R&amp;B, and notes Drake, Kendrick Lamar, and Bryson Tiller as his most recent musical influences. He can almost always be seen with a pair of headphones on producing a new track or writing for his next single. Music is one of his deepest passions, and he hopes to influence the world and change music for the better.</p>
+					</div>
+
+					<!-- JAYSON BANK$ -->
+
+					<!--div class="overlay-section" id="jayson-banks-profile">
+						<img src="./img/jayson_banks.png" alt="Jayson Banks"/>
+						<h3 class="raleway">Recording Arist</h3>
+						<p class="justified">Jayson comes from a multi-racial family. He was introduced to a variety of music at a young age. He grew up listening to traditional Caribbean rhythms around the house. He expanded his musical interests and took a liking to rock bands such as Three Days Grace, Skillet, and Linkin Park as he got older. He later developed a love for singing in high school which led him to explore R&amp;B. He grew very fond of The Weeknd and Roy Woods as a result. When asked about his personal style, Jayson states, "I just started to look for ways to express myself; everything I wear reflects a small part of my personality."</p>
+						<p class="justified">Jayson Bank$ comes from an Afro-Latino background, and was introduced to Latin Pop and Reggaeton at a young age. Years later, Jayson grew to expand his love for music by listening to genres such as rap, rock, pop, and R&amp;B. His greatest musical inspirations are XXXTentacion, A$AP Rocky, Roy Woods, and Playboi Carti. Jayson has a unique taste in fashion inspired by the Los Angeles and New York urban scene. He looks to expand his sound and understanding of music as he continues on his journey as an artist.</p>
+					</div-->
+
+					<!-- WAVY -->
+
+					<div class="overlay-section" id="wavy-profile">
+						<img src="./img/wavy.png" alt="Wavy"/>
+						<h3 class="raleway">Recording Artist</h3>
+						<!--p class="justified">Wavy began photography in his early childhood and received his first camera at age thirteen. His love for the craft stems from its ability to uniquely capture moments in life. He focuses on the meanings and messages behind each picture. Wavy draws his artistic inspiration from ASAP ROCKY, Virgil Abloh, Travis Scott, and Kanye West. He describes his personal style as a mixture of Travis Scott and Kanye West in terms of fashion, music, and expression. He aims to continue to develop his photographic style with his own ForgiveMeWavy sauce.</p-->
+						<p class="justified">Wavy draws his artistic inspiration from ASAP ROCKY, Virgil Abloh, Travis Scott, and Kanye West. He describes his personal style as a mixture of Travis Scott and Kanye West in terms of fashion, music, and expression. He aims to continue to develop his musical style with his own ForgiveMeWavy sauce.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- LOADING BAR -->
+
+		<div class="fade overlay" id="loading-container">
+			<div id="loading-bar"></div>
+			<!--div id="loading-column"></div-->
+		</div>
+	</body>
+</html>
